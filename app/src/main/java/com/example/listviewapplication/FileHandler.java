@@ -31,27 +31,6 @@ public class FileHandler {
         }
 
     }
-//    public static ArrayList<String> ReadData(Context context){
-//        ArrayList <String> temp1 = new ArrayList<>();
-//        try {
-//            FileInputStream fis = new FileInputStream(FILENAME);
-//            ObjectInputStream ois = new ObjectInputStream(fis);
-//            temp1 = ((ArrayList<String>)ois.readObject());
-//
-//            ois.close();
-//            fis.close();
-//
-//        } catch (FileNotFoundException e) {
-//            throw new RuntimeException(e);
-//        } catch (IOException e) {
-//            throw new RuntimeException(e);
-//        } catch (ClassNotFoundException e) {
-//            throw new RuntimeException(e);
-//        }
-//
-//        return temp1;
-//
-//    }
     public static ArrayList<String> ReadData(Context context){
         ArrayList<String> itemList = new ArrayList<>();
         try {

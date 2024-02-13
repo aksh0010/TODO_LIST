@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add_item"
+    android:orientation="vertical"
+    android:id="@+id/linear_layout_add_item_xml">
+
+    <!--    id's are written in order as XMLfilename_viewtype_uniquename-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/add_item_XML_tv_navbar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="#0B30AF"-->
+    <!--        android:text="TO-DO List"-->
+    <!--        android:textColor="#F1E6E6" />-->
+
+    <TextView
+        android:id="@+id/add_item_tv_display_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="@string/enter_your_task"
+        android:textSize="34sp" />
+
+    <EditText
+        android:id="@+id/add_item_et_additem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/add_item_to_list"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/add_item_btn_addbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/add_to_the_list"
+        android:textColorHint="#FBFBFB" />
+</LinearLayout>
