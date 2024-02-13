@@ -3,4 +3,6 @@
     <string name="enter_your_task">Enter your Task !</string>
     <string name="add_to_the_list">Add to the list</string>
     <string name="add_item_to_list">Add Item to list</string>
+    <string name="update_your_task">Update Your Task!</string>
+    <string name="update_the_list">Update the list!</string>
 </resources>

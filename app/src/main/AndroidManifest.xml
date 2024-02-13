@@ -24,6 +24,10 @@
         <activity
             android:name=".Add_item"
             android:exported="false" />
+        <activity
+            android:name=".Update_item"
+            android:exported="false" />
     </application>
+
 
 </manifest>

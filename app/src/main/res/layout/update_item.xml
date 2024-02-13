@@ -1,37 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- This XML layout represents the layout for adding a new item to the TO-DO list -->
+<!-- This XML layout represents the layout for updating an item in the TO-DO list -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Add_item"
+    tools:context=".Update_item"
     android:orientation="vertical"
-    android:id="@+id/linear_layout_add_item_xml">
+    android:id="@+id/linear_layout_update_item_xml">
 
-    <!-- TextView to prompt the user to enter the task -->
+    <!-- TextView to display the task to be updated -->
     <TextView
-        android:id="@+id/add_item_tv_display_text"
+        android:id="@+id/update_item_tv_display_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:hint="@string/enter_your_task"
+        android:hint="@string/update_your_task"
         android:textSize="34sp" />
 
-    <!-- EditText to input the new task -->
+    <!-- EditText to input the updated task -->
     <EditText
-        android:id="@+id/add_item_et_additem"
+        android:id="@+id/update_item_et_update_item"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="@string/add_item_to_list"
         android:inputType="text" />
 
-    <!-- Button to add the new task to the list -->
+    <!-- Button to trigger the update action -->
     <Button
-        android:id="@+id/add_item_btn_addbutton"
+        android:id="@+id/update_item_btn_update_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/add_to_the_list"
+        android:hint="@string/update_the_list"
         android:textColorHint="#FBFBFB" />
 </LinearLayout>
