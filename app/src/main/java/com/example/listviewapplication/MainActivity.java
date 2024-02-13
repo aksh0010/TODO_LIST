@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Opening the Add_item activity when the FloatingActionButton is clicked
                 Intent intent_main_to_add = new Intent(MainActivity.this, Add_item.class);
+                intent_main_to_add.putExtra("operation","add_new_item");
                 startActivity(intent_main_to_add);
             }
         });
@@ -64,14 +65,15 @@ public class MainActivity extends AppCompatActivity {
                 // Retrieve the text of the item long-pressed
                 String selectedItem = arrayList.get(position);
                 // Opening the Update_item activity with the selected item's text and position
-                Intent intent_main_to_update = new Intent(MainActivity.this, Update_item.class);
+                Intent intent_main_to_update = new Intent(MainActivity.this, Add_item.class);
+                intent_main_to_update.putExtra("operation","update_item");
                 intent_main_to_update.putExtra("text_to_update",selectedItem);
                 intent_main_to_update.putExtra("positon",position);
                 startActivity(intent_main_to_update);
                 // Setting the selected item position for further reference
                 selectedItemPosition = position;
 
-                Log.d("UPDATE_BUTTON", "Back to Main: ");
+                Log.d("UPDATE_BUTTON", "Back to Main: "+selectedItem);
                 return true;
             }
         });
