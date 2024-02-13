@@ -2,7 +2,6 @@ package com.example.listviewapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
-import android.util.Log;
 import android.view.View;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
@@ -82,11 +81,9 @@ public class Add_item extends AppCompatActivity {
                     arrayList.set(pos,edittext.getText().toString()); // Updating the item in the ArrayList
                     arrayAdapter.notifyDataSetChanged(); // Notifying the adapter about the data change
 
-                    Log.d("UPDATE_BUTTON", pos + " |||| "+text); // Logging the update action
                     add_button.setText(""); // Clearing the update item EditText
                     FileHandler.writeData(arrayList, getApplicationContext()); // Writing data to the file
 
-                    Log.d("UPDATE_BUTTON", "After Writing new arraylist" + " " +arrayList); // Logging the update action
                     Intent intent_update_to_main = new Intent(Add_item.this, MainActivity.class);
                     startActivity(intent_update_to_main); // Navigating back to the MainActivity
                 }

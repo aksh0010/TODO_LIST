@@ -1,10 +1,8 @@
 package com.example.listviewapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -72,8 +70,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent_main_to_update);
                 // Setting the selected item position for further reference
                 selectedItemPosition = position;
-
-                Log.d("UPDATE_BUTTON", "Back to Main: "+selectedItem);
                 return true;
             }
         });
